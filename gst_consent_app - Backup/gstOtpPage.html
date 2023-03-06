@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="assets/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="gst-otp-content" class="container" style="margin-top: 80px;">
+        <div class="row py-5 text-center">
+            <div class="row align-items-center">
+                <div class="">
+                    <h4><span style="color:crimson">* IMPORTANT: <span>This OTP is sent to your GST registered mobile
+                                number</h4>
+                </div><br>
+
+                <form id="gstOtpForm" class="gst-otp-inp">
+                    <div class="Otpheading">
+                        <h1 style="font-weight:bold;">Please Enter The OTP</h1>
+                    </div>
+                    <span class="resend-msg" id="resend-otp-msg" style="font-size: 14px;"></span><br>
+                    <div class="input-field-gst">
+                        <input type="number">
+                        <input type="number" disabled>
+                        <input type="number" disabled>
+                        <input type="number" disabled>
+                        <input type="number" disabled>
+                        <input type="number" disabled>
+                    </div><br><br>
+                    <button id="resendGstOtp" type="submit" class="btn-border-otp" disabled data-toggle='modal'
+                        onclick="return countResendGst();">resend OTP </button>
+                    <button type="submit" id="otpGstsubmit" data-toggle='modal' class="btn-orange-otp"
+                        onclick="return submitGst();" disabled> submit</button><br><br>
+                    <p style="font-weight: bold;">
+                        The OTP will expire in
+                        <span id="expire" class="expire text-dark" style="font-weight: bold; color: crimson;">s</span>
+
+                    </p>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

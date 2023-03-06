@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="assets/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="consentpage" class="container">
+        <div class="">
+            <div class="banner">
+                <div class="inner-banner">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <!-- gst username -->
+                            <div id="gst-username" style="display:block ;">
+                                <form action="">
+                                    <p>Please enter your user name for GST portal Login</p>
+                                    <label for="name">Enter your name:</label>
+                                    <input type="text" id="gst-username-input" class="username-inp" autocomplete="off">
+                                    <button id="gst-submit" type="submit" class="btn-gst-user"
+                                        onclick="return validateGstUsername();">submit</button>
+
+                                </form>
+                            </div><br><br>
+                            <div id="consentForm" class=" banner-content-center">
+                                <div class="heading">
+                                    <h1 style="font-weight: bolder;" class="consent-heading">Privacy Policy</h1>
+                                    <p style="text-align: justify;">Before you go any further we would request you to give the
+                                        consent to fetch your GST information by clicking on agree button.</p>
+                                    <h4><strong>CONSENT</strong></h4>
+                                    <p style="text-align: justify;">I hereby consent to share my financial data (GST returns for the
+                                        past 12 months) with Xtracap Fintech in order to calculate the financial health
+                                        of my business and to share my required data with a suitable financial service
+                                        provider for me to select a product that is suitable for my business. </p>
+
+                                </div><br><br>
+
+
+                                <div class="">
+                                    <button id="disagree" type="submit" class="btn-border-otp"> disagree</button>
+                                    <button id="agreeConsent" type="submit" class="btn btn-orange-otp"
+                                        onclick="return OtpFromGstin();" disabled>Agree</button>
+                                </div><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>

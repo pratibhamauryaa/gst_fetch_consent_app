@@ -1,0 +1,338 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+
+/* *,
+::after,
+::before {
+  box-sizing: border-box
+} */
+
+section {
+  display: block;
+}
+
+
+* {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+
+/* 
+fonts */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  /* font-weight: 400; */
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  /* font-weight: 500px; */
+}
+
+.container {
+  margin-top: 20px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  /* overflow:scroll; */
+}
+
+section {
+  padding: 150px 0;
+  display: block;
+  /* overflow:visible; */
+}
+
+
+
+input {
+  margin: 10px;
+  height: 35px;
+  width: 65px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.2rem;
+  background: #eef2f3;
+
+}
+
+.input-field input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+.input-field-gst input::-webkit-inner-spin-button,
+.input-field-gst input::-webkit-outer-spin-button {
+  display: none;
+}
+.btn-orange-otp {
+  color: #fff;
+  transition: 0.4s ease all;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-family: 'AvenirLTStd-Medium';
+  border: 2px solid #f47f07;
+  background-color: #f47f07;
+  border-radius: 20px;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  min-width: 140px;
+}
+
+.btn-orange-otp:hover {
+  color: #fff;
+  border: 2px solid #f47f07;
+  background-color: #ffcc5e;
+  border: 2px solid #ffcc5e;
+}
+
+.btn-border-otp {
+  color: #282828;
+  transition: 0.4s ease all;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-family: 'AvenirLTStd-Medium';
+  border: 2px solid #f47f07;
+  padding: 12px 25px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  min-width: 140px;
+}
+
+.btn-border-otp:hover {
+  color: #282828;
+  border: 2px solid #fff;
+  background-color: #ffcc5e;
+  border: 2px solid #f47f07;
+}
+
+.btn-orange-otp:disabled {
+  opacity: 0.5;
+
+}
+
+.btn-border-otp:disabled {
+  opacity: 0.5;
+
+}
+
+.banner-content-center {
+  width: 60%;
+  margin: 0 auto;
+  /* height: 20px; */
+}
+
+
+.Otpheading {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: bolder;
+}
+
+.btn-gst-user{
+  color: #fff;
+  background-color: #28a745;
+  transition: 0.4s ease all;
+  border: 2px solid  #28a745;
+  border-radius: 20px;
+  font-size: 10px;
+  min-width: 140px;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+
+.btn-gst-user.submitted{
+  background-color: #92e9a6;
+  border: #92e9a6;
+  
+  
+}
+.username-inp{
+  width: 150px;
+}
+.resend-msg{
+  color: chocolate;
+  font-family: 'Fira Sans', sans-serif;
+}
+.input-field-gst, input{
+  margin: 0;
+}
+
+
+.modal{
+  margin-top: 30px;
+}
+
+.modal-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.modal-content{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .btn-border-otp {
+    color: #282828;
+    transition: 0.4s ease all;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-family: 'AvenirLTStd-Medium';
+    border: 1px solid #f47f07;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    min-width: 80px;
+    
+  }
+
+  .btn-orange-otp {
+    color: #fff;
+    transition: 0.4s ease all;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-family: 'AvenirLTStd-Medium';
+    border: 2px solid #f47f07;
+    background-color: #f47f07;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    min-width: 80px;
+  }
+  .btn-gst-user{
+    color: #fff;
+    background-color: #28a745;
+    transition: 0.4s ease all;
+    border-radius: 20px;
+    min-width: 80px;
+    padding: 10px 10px;
+  }
+  .btn-gst-user.submitted{
+    background-color: #92e9a6;
+    border: #92e9a6;
+    font-size: 10px;
+    
+  }
+ 
+  .consent-heading{
+    font-size: 30px;
+  }
+
+  .banner-content-center {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .username-inp{
+    width: 100px;
+  }
+
+  .input-field-gst{
+    width:100%;
+  }
+  .input-field-gst, input{
+    margin: 0;
+  }
+
+  .modal{
+    margin-top: 100px;
+  }
+
+  input {
+    margin: 10px;
+    height: 35px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2rem;
+    background: #eef2f3;
+  
+  }
+  
+  .input-field-gst input{
+    margin:0px;
+  }
+
+}  

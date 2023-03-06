@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GST Consent - Bridge2Capital</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="jquery-3.6.3.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- CSS Starts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;900&amp;display=swap" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
+    
+    <!-- CSS Ends-->
+    <script type="text/javascript" src="app.js"></script>
+    <!-- bootstrap Starts -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- bootstrap Ends -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+
+
+<body>
+    <!-- location guide -->
+    <div class="modal" id="locationAllow">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title"><b>How to allow location</b></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+              <img id="location-guide" class="img-fluid" alt="Image Description">
+            </div>
+    
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal"
+                onclick="return location.reload();">Close</button>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+    <!-- location guide -->
+
+
+
+    <div id="otpContent" class="container" style="display: none;">
+        <div class="row py-5 text-center">
+            <div class="col-md-3">
+                <div class="modal otp-modal" id="userInfoModal" style="margin-top: 80px;">
+                    <h2 class="py-3 text-center"> Welcome, <span type="text" id="user-name"
+                            style="color: rgb(248, 123, 7);font-weight: bolder;"></span></h2><br>
+                    <div class="">
+                        <h4>We have sent you a 5 digit OTP on your mobile number: <span id="mobile-number"
+                                style="font-weight:bold;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></span>
+                        </h4>
+                    </div><br>
+                    <form id="otpForm" action="#" ons>
+                        <div class="Otpheading">
+                            <h1 style="font-weight:bold;">Please Enter The OTP</h1>
+                        </div>
+                        <span class="resend-msg" id="resend-otp-msg"></span><br><br>
+                        <div class="input-field">
+                            <input type="number">
+                            <input type="number" disabled>
+                            <input type="number" disabled>
+                            <input type="number" disabled>
+                            <input type="number" disabled>
+                            <input type="number" disabled>
+                        </div><br><br>
+                        <button id="resendOtp" type="submit" class="btn-border-otp" disabled data-toggle='modal'>resend
+                            OTP </button>
+                        <button type="submit" id="otpsubmit" class="btn-orange-otp" disabled>submit</button><br><br>
+                        <p style="font-weight: bold;">
+                            The OTP will expire in
+                            <span id="expire" class="expire text-dark"
+                                style="font-weight: bold; color: crimson;">s</span>
+
+                        </p>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- gst user name input start-->
+    <div id="gstUserName" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This is a modal dialog box.</p>
+        </div>
+    </div>
+
+    <!-- gst user name input ends -->
+    <!-- resend disable message -->
+    <div class="modal fade dang" id="resendDisableModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title dan" id="ModalLabel">Resend disabled</h5>
+                </div>
+                <div class="modal-body">
+                    You can not resend the otp more than 3 time
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"
+                        onclick="return location.reload();">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
